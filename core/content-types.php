@@ -1,5 +1,4 @@
 <?php
-
 /**
  * CustomPress_Content_Types
  *
@@ -488,7 +487,7 @@ if ( ! class_exists( 'CustomPress_Content_Types' ) ):
 			$property     = strtolower( $property );
 
 			$result = '';
-			if ( ! empty( $custom_field ) ) {
+			if ( ! empty( $custom_field ) && $post ) {
 				switch ( $property ) {
 					case 'title':
 						$result = $custom_field['field_title'];
